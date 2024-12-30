@@ -14,19 +14,39 @@
     font-weight: 600;
     font-style: normal;
   }
-
-body {
-    background-color: rgb(29, 4, 40);
+  body {
+    height: 100vh;
+    background-image: url('Artistic\ Wallpaper.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+#dateTime {
+  align-items:end;
+  width: 100%;
+  background-color: #000000;
+  display: flex;
+  justify-content:flex-end;
+  text-align: left;
+  flex-wrap:wrap;
+  color: rgb(240, 240, 240);
+  font-size: 14px;
+  font-weight: bold;
 }
+
+
+
+
+
 
 .card {
     width: 90%;
-    max-width: 470px;
-    background: linear-gradient(135deg, #8c31a0, rgba(148, 95, 189, 0.267));
+    max-width: 480px;
+    background: linear-gradient(140deg,#8A2BE2,#3F00FFE6);
     color: rgb(0, 0, 0);
     margin: 100px auto;
     border-radius: 20px;
-    padding: 40px 35px;
+    padding: 35px 35px;
     text-align: center;
 }
 
@@ -81,11 +101,12 @@ body {
 
 .weather h2 {
     font-size: 45px;
-    font-weight: 400;
+    font-weight: 500;
     margin-top: -10px;
 }
 
 .details {
+  font-weight: 500;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -94,6 +115,7 @@ body {
 }
 
 .col {
+  font-weight: 500;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,14 +130,13 @@ body {
 
 .humidity,
 .wind {
+  font-weight: 500;
     font-size: 28px;
     margin-top: -6;
 
 }
 
-.weather {
-    display: none;
-}
+
 
 .error {
     text-shadow: #d60000;

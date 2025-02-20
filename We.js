@@ -1,4 +1,3 @@
-
 //api.openweathermap.org/data/2.5/weather?q=mumbai&appid=a5592017ab1a27f5f6b7eb27d2e6c53b&units=metric
 
 
@@ -52,9 +51,27 @@ async function checkWeather(city) {
     
 }
 
-searchbtn.addEventListener("click" , ()=>{
+// Add keyboard event listener for Enter key
+searchBox.addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+        // Prevent default form submission behavior
+        event.preventDefault();
+        
+        // Trigger the search
+        checkWeather(searchBox.value);
+        
+        // Optional: Add visual feedback for the button
+        searchbtn.style.transform = "scale(0.95)";
+        setTimeout(() => {
+            searchbtn.style.transform = "scale(1)";
+        }, 100);
+    }
+});
+
+// Keep the existing click event listener
+searchbtn.addEventListener("click", () => {
     checkWeather(searchBox.value);
-})
+});
 
 
 

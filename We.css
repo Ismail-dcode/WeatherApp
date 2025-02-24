@@ -289,7 +289,7 @@ body::before {
     font-weight: 500;
 }
 
-.error {
+.error-type {
     color: #ff3333;
     font-size: 14px;
     margin: 10px 0;

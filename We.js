@@ -17,7 +17,7 @@ async function checkWeather(city) {
         const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
         
         if(response.status == 404) {
-            document.querySelector(".error").style.display = "block";
+            document.querySelector(".error-type").style.display = "block";
             weatherContent.style.display = "none";
         } else {
             const data = await response.json();
@@ -32,7 +32,7 @@ async function checkWeather(city) {
             
           
             weatherContent.style.display = "block";
-            document.querySelector(".error").style.display = "none";
+            document.querySelector(".error-type").style.display = "none";
             
        
             updateLastUpdateTime();

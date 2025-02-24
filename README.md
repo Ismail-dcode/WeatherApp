@@ -23,7 +23,7 @@ The project uses [OpenWeather API ](https://openweathermap.org/api)
 
 ## 🔥 Live Demo
 
-https://ismail-dcode.github.io/WeatherApp/
+https://ismail-dcode.github.io/WeatherNow/
 
 
 
